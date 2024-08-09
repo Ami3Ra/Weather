@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<nav class="navbar navbar-expand-lg bg-main fixed-top ">
+    <div class="container p-4">
+      <a class="navbar-brand logo" href="index.html"><img src="images/logo@2x.png"width="64" height="38" alt="weather">
+    <div class="logo-text text-white">
+        <span class="d-block fs-6 fw-bold">Weather</span>
+        <span class="fs-6 fw-lighter">tagline goes here</span>
+    </div>
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link home" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-item" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-item" href="#">Live Cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-item" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-item" href="#">Contact</a>
+          </li>
+         
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+<body>
+
+ <!-- nav section -->
+   
+      <div class="app-container margine-section py-5">
+        <div class="container py-5 my-5">
+            <!-- search input -->
+            <input type="text" id="search" class="w-100 mx-auto rounded-5 p-3 bg-main text-white mb-lg-5 " placeholder="Find Your Location ..."> 
+          <div class="row">
+              <!-- Today Data Section -->
+            <div class="item col-md-4 m-0 bg-second rounded-start-3">
+                <div class="d-flex justify-content-between text-light p-2">
+                    <p id="today_name">Monday</p>
+                    <span>
+                        <span id="today_number">5</span>
+                        <span id="today_month">August</span>
+                    </span>
+                </div>
+                <div class="item-content text-white">
+                    <p id="today_location" class="fs-4 text-secondary">Cairo</p>
+                    <span class="fs-1 fw-bolder ">
+                        <span id="today_temp">38.4</span>
+                        <span><sup>o</sup>C</span>
+                    </span>
+                </div>
+                <img id="today_img" class="m-4" src="images/icon-umberella.png" alt="">
+                <p id="today_condition" class="fs-6 text-light-blue mt-2 py-3">sunny</p>
+
+
+                <div class="item-footer text-light d-flex py-2 mb-3">
+                  <div class="d-flex me-3">
+                    <img src="images/icon-umberella.png" class="footer-icon me-2" alt="umberella">
+                    <p id="humidity">20%</p>
+                  </div>
+                  <div class="d-flex me-3">
+                    <img src="images/icon-wind.png" class="footer-icon mx-2" alt="wind">
+                    <p id="wind">30 km/h</p>
+                  </div>
+                  <div class="d-flex me-3">
+                   <img src="images/icon-compass.png" class="footer-icon mx-2" alt="wind_dir">
+                    <p id="wind_dir">SSW</p>
+                  </div>
+                </div>
+            </div>
+              <!-- Tomorrow Data Section -->
+            <div class="col-md-4 m-0  bg-main text-center p-2">
+              <div class="text-light ">
+                <p class="tomorrow_name">Monday</p>
+            </div>
+            <img class="tomorrow_img  m-4"  src="" alt="">
+
+            <h3 class=" text-white">
+              <span class=" fs-1 fw-bolder next_max_temp">38.4</span>
+              <span><sup>o</sup>C</span>
+          </h3>
+            <h5 class="fs-5 fw-light text-secondary">
+              <span class="next_min_temp">16.4</span>
+              <span><sup>o</sup>C</span>
+          </h5>
+          <p class="fs-6 text-light-blue mt-2 py-3 tomorrow_condition">sunny</p>
+            </div>
+
+             <!-- After Tomorrow Data Section -->
+             <div class="col-md-4 m-0 bg-second rounded-end-3 text-center p-2">
+              <div class="text-light">
+                <p class="tomorrow_name">Monday</p>
+            </div>
+            <img class="tomorrow_img  m-4" src="" alt="">
+
+            <h3 class=" text-white">
+              <span class=" fs-1 fw-bolder next_max_temp">38.4</span>
+              <span><sup>o</sup>C</span>
+          </h3>
+            <h5 class="fs-5 fw-light text-secondary">
+              <span class="next_min_temp">16.4</span>
+              <span><sup>o</sup>C</span>
+          </h5>
+          <p  class="fs-6 text-light-blue mt-2 py-3 tomorrow_condition">sunny</p>
+            </div>
+
+
+          </div>
+            
+        
+        </div>
+      </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

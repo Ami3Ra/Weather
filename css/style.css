@@ -1,0 +1,49 @@
+/* globak style */
+.bg-main{
+background-color: #1e202b;
+}
+.bg-second{
+    background-color: #23283bfe;
+}
+.margine-section{
+    margin-top: 50px;
+}
+.text-light-blue{
+    color: rgb(41, 120, 211);
+}
+.app-container{
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-color: #1e202b;
+}
+/* nav section */
+nav .home{
+    padding: 3px 25px !important;
+    border: 2px solid #009ad8;
+    border-radius: 30px;
+    color: #009ad8;
+    transition: all 0.5s;
+}
+nav .home:hover{
+    color: #009ad8;
+}
+nav ul .nav-item{
+    margin-inline: 10px;
+    color: white;
+    
+}
+nav ul .nav-item .menu-item{
+    padding: 3px 25px !important;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: white;
+    transition: all 0.5s;
+}
+nav ul .nav-item .menu-item:hover{
+    border: 2px solid #009ad8;
+    color: #009ad8;
+}
+nav .logo-text , nav .logo{
+    display: inline-block;
+    vertical-align: middle;
+}
